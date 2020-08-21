@@ -1,0 +1,73 @@
+2020-08-19 02:12:40.908  INFO 46628 --- [           main] com.dell.emc.DemoChunkApplication        : Starting DemoChunkApplication v0.0.1-SNAPSHOT on W103P483X2 with PID 46628 (D:\Git_CodeBase\Brown-Bag-Spring-Batch\demo-chunk\target\demo-chunk-0.0.1-SNAPSHOT.jar started by Rupchand_Dewangan in D:\Git_CodeBase\Brown-Bag-Spring-Batch\demo-chunk)
+2020-08-19 02:12:40.911 DEBUG 46628 --- [           main] com.dell.emc.DemoChunkApplication        : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-19 02:12:40.932  INFO 46628 --- [           main] com.dell.emc.DemoChunkApplication        : The following profiles are active: QA
+2020-08-19 02:12:42.653  INFO 46628 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-19 02:12:43.020  INFO 46628 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-19 02:12:43.103  INFO 46628 --- [           main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: POSTGRES
+2020-08-19 02:12:43.426  INFO 46628 --- [           main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2020-08-19 02:12:43.572  INFO 46628 --- [           main] com.dell.emc.DemoChunkApplication        : Started DemoChunkApplication in 3.628 seconds (JVM running for 4.231)
+2020-08-19 02:12:43.576  INFO 46628 --- [           main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: [run.date=2020-19-08 02:12:32]
+2020-08-19 02:12:43.700  INFO 46628 --- [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=flatFileJob]] launched with the following parameters: [{run.date=2020-19-08 02:12:32}]
+2020-08-19 02:12:43.774  INFO 46628 --- [           main] c.d.e.b.l.BatchConfigurationListner      : Cleanup before job run
+2020-08-19 02:12:43.800  INFO 46628 --- [           main] o.s.batch.core.job.SimpleStepHandler     : Executing step: [flatFileStep]
+2020-08-19 02:12:43.878  INFO 46628 --- [           main] c.d.e.b.item.writer.FlatFileItemWriter   : Received list of size: 10
+Order [orderId=1, firstName=Marianne, lastName=Billison, email=mbillison0@usda.gov, cost=80.82, itemId=0dffe46c-d94e-42d2-9c63-92b651009b48, itemName=Jeans, shipDate=null]
+Order [orderId=2, firstName=Beckie, lastName=Fussen, email=bfussen1@tripadvisor.com, cost=72.58, itemId=84ad1caa-1ddc-45a4-b0c3-ffd75f65d613, itemName=Leggings, shipDate=null]
+Order [orderId=3, firstName=Berta, lastName=Haddinton, email=bhaddinton2@businessinsider.com, cost=21.64, itemId=57352738-fe43-4dd7-8d45-ba6fba1c732a, itemName=Tank Top, shipDate=null]
+Order [orderId=4, firstName=Erminie, lastName=Northeast, email=enortheast3@livejournal.com, cost=97.28, itemId=d4292ec3-571d-47ff-8ddc-3d73bbb40242, itemName=Leggings, shipDate=null]
+Order [orderId=5, firstName=Myrwyn, lastName=Fahy, email=mfahy4@omniture.com, cost=26.77, itemId=aea7f3de-2593-42dd-a9a0-1bff3bebbbfa, itemName=V-Neck Pullover, shipDate=null]
+Order [orderId=6, firstName=Xymenes, lastName=Tournie, email=xtournie5@admin.ch, cost=65.21, itemId=7f51f2cd-2b75-4e61-bb81-c77735ef1933, itemName=Fleece Jacket, shipDate=null]
+Order [orderId=7, firstName=Abbey, lastName=Giannasi, email=agiannasi6@google.de, cost=50.81, itemId=fb5b6220-3b13-4eba-b6a5-52d4e1ddeba7, itemName=Polo Shirt, shipDate=null]
+Order [orderId=8, firstName=Charisse, lastName=Antcliffe, email=cantcliffe7@nydailynews.com, cost=52.8, itemId=a7520aca-2870-498c-a328-03c7638f7afb, itemName=Vest, shipDate=null]
+Order [orderId=9, firstName=Pepillo, lastName=Lammertz, email=plammertz8@bloomberg.com, cost=14.92, itemId=67c0be55-f4b2-4041-ba03-aa81e2dbfbbd, itemName=Sweater, shipDate=null]
+Order [orderId=10, firstName=Knox, lastName=Denniss, email=kdenniss9@comcast.net, cost=16.33, itemId=01f08014-f070-4f14-ad44-664adbec45e4, itemName=Vest, shipDate=null]
+2020-08-19 02:12:43.978  INFO 46628 --- [           main] c.d.e.b.item.writer.FlatFileItemWriter   : Received list of size: 10
+Order [orderId=11, firstName=Ber, lastName=Bohlin, email=bbohlina@webeden.co.uk, cost=66.18, itemId=ee769fe4-df2c-4733-a46d-96c1098dcc3f, itemName=Tank Top, shipDate=null]
+Order [orderId=12, firstName=Maurise, lastName=Willisch, email=mwillischb@google.co.jp, cost=54.82, itemId=3295bc5f-eeb1-4a1d-8a27-3cf65ae0f6a3, itemName=V-Neck Pullover, shipDate=null]
+Order [orderId=13, firstName=Maisie, lastName=Gauld, email=mgauldc@usda.gov, cost=22.42, itemId=b5a15eae-bfb2-48af-bd86-8e3da707595d, itemName=Polo Shirt, shipDate=null]
+Order [orderId=14, firstName=Biron, lastName=Langtree, email=blangtreed@desdev.cn, cost=39.62, itemId=abb73851-7dcf-4b95-8ceb-f6966065a57a, itemName=Ski Coat, shipDate=null]
+Order [orderId=15, firstName=Barb, lastName=Absolon, email=babsolone@nasa.gov, cost=91.5, itemId=fdfcfe62-87a8-46ab-a3ee-7817d6a41f96, itemName=Ski Coat, shipDate=null]
+Order [orderId=16, firstName=Lorens, lastName=Robjant, email=lrobjantf@ovh.net, cost=64.61, itemId=7d203b92-8b93-4ffe-a5c8-78d5e75d6e5f, itemName=V-Neck Pullover, shipDate=null]
+Order [orderId=17, firstName=Bobbee, lastName=Riggulsford, email=briggulsfordg@slashdot.org, cost=26.78, itemId=9e173e66-779c-43b0-a525-ece4c72e4112, itemName=Leggings, shipDate=null]
+Order [orderId=18, firstName=Alia, lastName=Brunesco, email=abrunescoh@slate.com, cost=79.03, itemId=fe9e76a2-e920-4f0d-86ce-f48816671758, itemName=Stretch Pants, shipDate=null]
+Order [orderId=19, firstName=Sigismond, lastName=Conneau, email=sconneaui@clickbank.net, cost=18.07, itemId=a4d87e5f-80c8-4a11-bfc5-2ecc73c436b4, itemName=Vest, shipDate=null]
+Order [orderId=20, firstName=Rand, lastName=Kurth, email=rkurthj@mozilla.com, cost=49.42, itemId=b4492688-3443-4c4c-b0e0-5913df71ae71, itemName=Sneakers, shipDate=null]
+2020-08-19 02:12:44.367  INFO 46628 --- [           main] c.d.e.b.item.writer.FlatFileItemWriter   : Received list of size: 10
+Order [orderId=21, firstName=Obed, lastName=Daudray, email=odaudrayk@geocities.jp, cost=43.07, itemId=5c68334c-a508-4f62-8112-d99b992d82c8, itemName=Fleece Jacket, shipDate=null]
+Order [orderId=22, firstName=Damara, lastName=Musson, email=dmussonl@lulu.com, cost=41.3, itemId=9fd36337-a28d-4553-8608-c9eac616e28e, itemName=Stretch Pants, shipDate=null]
+Order [orderId=23, firstName=Leoline, lastName=Brobeck, email=lbrobeckm@ameblo.jp, cost=92.53, itemId=9eac13ac-3c05-471a-a12e-241145b7c5f6, itemName=Ski Coat, shipDate=null]
+Order [orderId=24, firstName=Terence, lastName=Bruggen, email=tbruggenn@sina.com.cn, cost=46.01, itemId=6a59c21b-8332-45d8-a9a8-9d28e30bbd25, itemName=Jeans, shipDate=null]
+Order [orderId=25, firstName=Jeana, lastName=Ghiroldi, email=jghiroldio@earthlink.net, cost=40.97, itemId=bb4dd84c-ba7e-4abf-9e59-0100e3407245, itemName=Tank Top, shipDate=null]
+Order [orderId=26, firstName=Christophe, lastName=Wannes, email=cwannesp@vinaora.com, cost=59.04, itemId=a9238579-8d4e-44a7-bccc-02d49dd3cbc0, itemName=Leggings, shipDate=null]
+Order [orderId=27, firstName=Isidor, lastName=Boribal, email=iboribalq@samsung.com, cost=7.93, itemId=d5a0db21-dc8e-4866-82d8-0d6016398857, itemName=Tank Top, shipDate=null]
+Order [orderId=28, firstName=Frank, lastName=Knudsen, email=fknudsenr@constantcontact.com, cost=15.06, itemId=050dbe21-93be-4b10-ae03-2b04626d1f6a, itemName=Vest, shipDate=null]
+Order [orderId=29, firstName=Pace, lastName=Silbert, email=psilberts@reverbnation.com, cost=16.34, itemId=5b6d733a-5c7d-48da-8682-2dd148825e70, itemName=Jeans, shipDate=null]
+Order [orderId=30, firstName=Nickey, lastName=Bercher, email=nberchert@nsw.gov.au, cost=72.48, itemId=2e2405b4-ec1b-441a-8225-6f6de08fb8cc, itemName=Tank Top, shipDate=null]
+2020-08-19 02:12:44.763  INFO 46628 --- [           main] c.d.e.b.item.writer.FlatFileItemWriter   : Received list of size: 10
+Order [orderId=31, firstName=Brian, lastName=Westby, email=bwestbyu@phpbb.com, cost=3.48, itemId=8c889bfc-99bc-48ce-ac1e-c7458f2140f6, itemName=Ski Coat, shipDate=null]
+Order [orderId=32, firstName=Arthur, lastName=Hellsdon, email=ahellsdonv@spotify.com, cost=21.86, itemId=6766bc74-b33a-4ce0-90e2-99d8665852ff, itemName=Vest, shipDate=null]
+Order [orderId=33, firstName=Crosby, lastName=Bozward, email=cbozwardw@about.me, cost=31.48, itemId=4f3f26b3-fab8-4a79-8db5-e9755db6e2e3, itemName=Ski Coat, shipDate=null]
+Order [orderId=34, firstName=Ave, lastName=Crick, email=acrickx@msn.com, cost=47.91, itemId=c196e4f8-6023-43fd-b9d4-a05d280143bf, itemName=Polo Shirt, shipDate=null]
+Order [orderId=35, firstName=Faythe, lastName=Parcell, email=fparcelly@google.ru, cost=25.93, itemId=5edd6015-3387-4a9a-ba62-0c9841c2e03f, itemName=Stretch Pants, shipDate=null]
+Order [orderId=36, firstName=Stephana, lastName=Daniell, email=sdaniellz@elegantthemes.com, cost=83.47, itemId=e4bd725a-db8d-4775-b0eb-9ab1df74ddd5, itemName=Sweater, shipDate=null]
+Order [orderId=37, firstName=Geordie, lastName=Reisenstein, email=greisenstein10@ebay.co.uk, cost=91.56, itemId=e324a008-12ba-4886-82d3-39ac7357796e, itemName=Ski Coat, shipDate=null]
+Order [orderId=38, firstName=Glyn, lastName=Cherrison, email=gcherrison11@unicef.org, cost=77.21, itemId=af089718-c52b-42b9-a7eb-891fd33ef72b, itemName=Sneakers, shipDate=null]
+Order [orderId=39, firstName=Gordon, lastName=Goodreid, email=ggoodreid12@omniture.com, cost=92.28, itemId=891baed9-23a2-46b5-84c9-ecbd7f14d222, itemName=V-Neck Pullover, shipDate=null]
+Order [orderId=40, firstName=Melly, lastName=Joire, email=mjoire13@wired.com, cost=28.73, itemId=a630c36a-9647-40da-a884-6c8835ba970c, itemName=Stretch Pants, shipDate=null]
+2020-08-19 02:12:45.189  INFO 46628 --- [           main] c.d.e.b.item.writer.FlatFileItemWriter   : Received list of size: 10
+Order [orderId=41, firstName=Dyna, lastName=Danilchev, email=ddanilchev14@parallels.com, cost=45.53, itemId=c48de1e4-8642-4631-9f55-5257de83b049, itemName=Tank Top, shipDate=null]
+Order [orderId=42, firstName=Ralph, lastName=Lobley, email=rlobley15@hp.com, cost=90.53, itemId=2db816ef-70f1-4d46-a0f6-bc1418b5e47b, itemName=Tank Top, shipDate=null]
+Order [orderId=43, firstName=Jeramie, lastName=Rand, email=jrand16@mapquest.com, cost=52.72, itemId=97b9dabb-d604-49a7-96c2-9dbbd11c8719, itemName=Tank Top, shipDate=null]
+Order [orderId=44, firstName=Leeanne, lastName=Threadgold, email=lthreadgold17@go.com, cost=97.53, itemId=0f6450f2-32a8-403e-921d-477e89100bf0, itemName=Jeans, shipDate=null]
+Order [orderId=45, firstName=Rubi, lastName=Gillani, email=rgillani18@dot.gov, cost=89.73, itemId=77ed78c3-86e4-4cb2-a5fa-e4fb876661b9, itemName=Tank Top, shipDate=null]
+Order [orderId=46, firstName=Massimiliano, lastName=McTrustram, email=mmctrustram19@theguardian.com, cost=92.11, itemId=be0bc7a3-96aa-4ebf-8971-0fe5db4b602b, itemName=Leggings, shipDate=null]
+Order [orderId=47, firstName=Leopold, lastName=Roadnight, email=lroadnight1a@fda.gov, cost=87.99, itemId=7b5138fb-9de8-475e-afe5-835ce9923d25, itemName=Jeans, shipDate=null]
+Order [orderId=48, firstName=Gwenny, lastName=Costain, email=gcostain1b@oracle.com, cost=26.24, itemId=ea2054b5-8e08-40b1-8433-7486effd1177, itemName=V-Neck Pullover, shipDate=null]
+Order [orderId=49, firstName=Robenia, lastName=O'Dowgaine, email=rodowgaine1c@cbc.ca, cost=10.02, itemId=1165320c-4f7c-440f-8055-565c6655775c, itemName=Ski Coat, shipDate=null]
+Order [orderId=50, firstName=Del, lastName=Barham, email=dbarham1d@ibm.com, cost=9.97, itemId=448a59a8-9bd9-418f-9ff5-caa00273b6b8, itemName=Sneakers, shipDate=null]
+2020-08-19 02:12:45.571  INFO 46628 --- [           main] o.s.batch.core.step.AbstractStep         : Step: [flatFileStep] executed in 1s764ms
+2020-08-19 02:12:45.615  INFO 46628 --- [           main] c.d.e.b.l.BatchConfigurationListner      : Ran the job with Instance Id : 36
+2020-08-19 02:12:45.621  INFO 46628 --- [           main] c.d.e.b.l.BatchConfigurationListner      : Post job completion logic like sending email, changing extention or ftp etc
+2020-08-19 02:12:45.627  INFO 46628 --- [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=flatFileJob]] completed with the following parameters: [{run.date=2020-19-08 02:12:32}] and the following status: [COMPLETED] in 1s849ms
+2020-08-19 02:12:45.674  INFO 46628 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-19 02:12:45.717  INFO 46628 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,0 +1,31 @@
+2020-08-21 00:49:59.945  INFO 9592 --- [           main] com.dell.emc.DemoChunkApplication        : Starting DemoChunkApplication on W103P483X2 with PID 9592 (D:\Git_CodeBase\Brown-Bag-Spring-Batch\demo-chunk\target\classes started by Rupchand_Dewangan in D:\Git_CodeBase\Brown-Bag-Spring-Batch\demo-chunk)
+2020-08-21 00:49:59.954 DEBUG 9592 --- [           main] com.dell.emc.DemoChunkApplication        : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-21 00:49:59.955  INFO 9592 --- [           main] com.dell.emc.DemoChunkApplication        : The following profiles are active: QA
+2020-08-21 00:50:00.965  INFO 9592 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-21 00:50:01.374  INFO 9592 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-21 00:50:01.463  INFO 9592 --- [           main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: POSTGRES
+2020-08-21 00:50:01.597  INFO 9592 --- [           main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2020-08-21 00:50:01.724  INFO 9592 --- [           main] com.dell.emc.DemoChunkApplication        : Started DemoChunkApplication in 2.245 seconds (JVM running for 5.788)
+2020-08-21 00:50:01.729  INFO 9592 --- [           main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2020-08-21 00:50:02.037  INFO 9592 --- [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=chunkBasedJob]] launched with the following parameters: [{}]
+2020-08-21 00:50:02.082  INFO 9592 --- [           main] c.d.e.b.l.BatchConfigurationListner      : Cleanup before job run
+2020-08-21 00:50:02.170  INFO 9592 --- [           main] o.s.batch.core.job.SimpleStepHandler     : Executing step: [chunkBasedStep]
+***************** PROCESSESING
+***************** PROCESSESING
+2020-08-21 00:50:02.188  INFO 9592 --- [           main] com.dell.emc.batch.BatchConfiguration    : Received list of size: 2
+2020-08-21 00:50:02.188  INFO 9592 --- [           main] com.dell.emc.batch.BatchConfiguration    : 1
+2020-08-21 00:50:02.188  INFO 9592 --- [           main] com.dell.emc.batch.BatchConfiguration    : 2
+***************** PROCESSESING
+***************** PROCESSESING
+2020-08-21 00:50:02.193  INFO 9592 --- [           main] com.dell.emc.batch.BatchConfiguration    : Received list of size: 2
+2020-08-21 00:50:02.194  INFO 9592 --- [           main] com.dell.emc.batch.BatchConfiguration    : 3
+2020-08-21 00:50:02.194  INFO 9592 --- [           main] com.dell.emc.batch.BatchConfiguration    : 4
+***************** PROCESSESING
+2020-08-21 00:50:02.197  INFO 9592 --- [           main] com.dell.emc.batch.BatchConfiguration    : Received list of size: 1
+2020-08-21 00:50:02.197  INFO 9592 --- [           main] com.dell.emc.batch.BatchConfiguration    : 5
+2020-08-21 00:50:02.202  INFO 9592 --- [           main] o.s.batch.core.step.AbstractStep         : Step: [chunkBasedStep] executed in 32ms
+2020-08-21 00:50:02.208  INFO 9592 --- [           main] c.d.e.b.l.BatchConfigurationListner      : Ran the job with Instance Id : 61
+2020-08-21 00:50:02.208  INFO 9592 --- [           main] c.d.e.b.l.BatchConfigurationListner      : Post job completion logic like sending email, changing extention or ftp etc
+2020-08-21 00:50:02.212  INFO 9592 --- [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=chunkBasedJob]] completed with the following parameters: [{}] and the following status: [COMPLETED] in 138ms
+2020-08-21 00:50:02.215  INFO 9592 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-21 00:50:02.332  INFO 9592 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,0 +1,30 @@
+2020-08-22 02:46:50.099  INFO 41864 --- [   scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step]
+Hello Guys ! Welcome your in Spring Batch World !!!
+-------------------------------------------------------
+The run time is: 2020-08-22T02:46:50.135
+2020-08-22 02:46:50.167  INFO 41864 --- [   scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [step] executed in 67ms
+2020-08-22 02:46:50.177  INFO 41864 --- [   scheduling-1] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=job]] completed with the following parameters: [{runTime=1598044610001}] and the following status: [COMPLETED] in 101ms
+2020-08-22 02:47:00.016  INFO 41864 --- [   scheduling-1] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=job]] launched with the following parameters: [{runTime=1598044620001}]
+2020-08-22 02:47:00.038  INFO 41864 --- [   scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step]
+Hello Guys ! Welcome your in Spring Batch World !!!
+-------------------------------------------------------
+The run time is: 2020-08-22T02:47:00.115
+2020-08-22 02:47:00.177  INFO 41864 --- [   scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [step] executed in 126ms
+2020-08-22 02:47:00.216  INFO 41864 --- [   scheduling-1] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=job]] completed with the following parameters: [{runTime=1598044620001}] and the following status: [COMPLETED] in 189ms
+2020-08-22 02:47:10.022  INFO 41864 --- [   scheduling-1] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=job]] launched with the following parameters: [{runTime=1598044630001}]
+2020-08-22 02:47:10.039  INFO 41864 --- [   scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step]
+Hello Guys ! Welcome your in Spring Batch World !!!
+-------------------------------------------------------
+The run time is: 2020-08-22T02:47:10.135
+2020-08-22 02:47:10.196  INFO 41864 --- [   scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [step] executed in 156ms
+2020-08-22 02:47:10.243  INFO 41864 --- [   scheduling-1] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=job]] completed with the following parameters: [{runTime=1598044630001}] and the following status: [COMPLETED] in 209ms
+2020-08-22 02:47:20.011  INFO 41864 --- [   scheduling-1] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=job]] launched with the following parameters: [{runTime=1598044640001}]
+2020-08-22 02:47:20.020  INFO 41864 --- [   scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step]
+Hello Guys ! Welcome your in Spring Batch World !!!
+-------------------------------------------------------
+The run time is: 2020-08-22T02:47:20.116
+2020-08-22 02:47:20.169  INFO 41864 --- [   scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [step] executed in 148ms
+2020-08-22 02:47:20.195  INFO 41864 --- [   scheduling-1] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=job]] completed with the following parameters: [{runTime=1598044640001}] and the following status: [COMPLETED] in 178ms
+2020-08-22 02:47:21.463  INFO 41864 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-08-22 02:47:21.466  INFO 41864 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-22 02:47:21.501  INFO 41864 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

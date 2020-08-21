@@ -1,0 +1,14 @@
+CREATE TABLE PAYROLL  (
+    transaction_id serial not null  PRIMARY KEY,
+    person_identification VARCHAR(20),
+    currency VARCHAR(20),
+    tx_ammount BIGINT,
+    account_type VARCHAR(20),
+    account_id VARCHAR(20),
+    tx_description VARCHAR(20),
+    first_last_name VARCHAR(20)
+);
+
+
+DataIntegrityViolationException: PreparedStatementCallback; SQL [INSERT INTO PAYROLL (PERSON_IDENTIFICATION, CURRENCY, TX_AMMOUNT, ACCOUNT_TYPE, ACCOUNT_ID, TX_DESCRIPTION, FIRST_LAST_NAME) VALUES (?,?,?,?, ?, ?, ?)ERROR: null value in column "transaction_id" violates not-null constraint
+  Detail: Failing row contains (null, 401343844, USD, 1583, SAVING, 3550891500, PAYROLL MARCH 2018, JOHN SMITH).;

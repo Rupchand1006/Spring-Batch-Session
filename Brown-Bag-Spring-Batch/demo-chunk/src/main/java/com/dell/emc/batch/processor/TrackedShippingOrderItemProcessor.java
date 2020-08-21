@@ -1,0 +1,38 @@
+package com.dell.emc.batch.processor;
+
+import java.util.UUID;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.batch.item.ItemProcessor;
+
+import com.dell.emc.batch.BatchConfiguration;
+import com.dell.emc.batch.exception.OrderProcessingException;
+import com.dell.emc.model.Order;
+import com.dell.emc.model.TrackedOrder;
+
+public class TrackedShippingOrderItemProcessor implements ItemProcessor<Order, TrackedOrder> {
+
+	private static final Logger logger = LoggerFactory.getLogger(BatchConfiguration.class);
+
+	@Override
+	public TrackedOrder process(Order item) throws Exception {
+
+		logger.info("Processing order with id: " + item.getOrderId());
+		logger.info("Processing with thread " + Thread.currentThread().getName());
+
+		TrackedOrder trackedOrder = new TrackedOrder(item);
+		trackedOrder.setTrackingNumber(this.getTrackingNumber());
+		return trackedOrder;
+	}
+
+	private String getTrackingNumber() throws OrderProcessingException {
+
+		if (Math.random() < .05) {
+			throw new OrderProcessingException();
+		}
+
+		return UUID.randomUUID().toString();
+	}
+
+}
